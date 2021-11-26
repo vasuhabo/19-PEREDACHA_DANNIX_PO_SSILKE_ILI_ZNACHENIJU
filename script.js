@@ -39,12 +39,13 @@ const newNumbers = copy(numbers);// воспользуемся функцией 
 
 newNumbers.a = 10;// обращаемся  к  свойству а
 
+newNumbers.c.x =10;
+
 console.log(newNumbers);
 console.log(numbers);
 
+//[Running] node "w:\КУРС ДЖАВА СКРИПТ\1\19 PEREDACHA_DANNIX_PO_SSILKE_ILI_ZNACHENIJU\tempCodeRunnerFile.js"
+//{ a: 10, b: 5, c: { x: 10, y: 4 } }
+//{ a: 2, b: 5, c: { x: 10, y: 4 } }
 
-// [Running] node "w:\КУРС ДЖАВА СКРИПТ\1\19 PEREDACHA_DANNIX_PO_SSILKE_ILI_ZNACHENIJU\tempCodeRunnerFile.js"
 
-// { a: 10, b: 5, c: { x: 7, y: 4 } } // скопированный   обьект  где  мы  поменяли  значение  а   на  10
-
-// { a: 2, b: 5, c: { x: 7, y: 4 } }//  базовый  обьект

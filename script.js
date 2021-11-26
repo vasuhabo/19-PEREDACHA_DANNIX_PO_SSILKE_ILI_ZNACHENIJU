@@ -1,16 +1,23 @@
 "use strict";
 
-const old_array = ['a','b','c'];
+const video = ['youtube','vimeo','rutube'];
 
-const neo_array = old_array.slice();
+const blogs = ['wordpress','livejournal','blogger'];
 
-neo_array[1] = 'hfghgfkjkhfk';
-
-console.log (neo_array);
-
-console.log(old_array);
+const internet = [...video, ...blogs, 'vk', 'facebook'];
 
 
-///[Running] node "w:\КУРС ДЖАВА СКРИПТ\1\19 PEREDACHA_DANNIX_PO_SSILKE_ILI_ZNACHENIJU\tempCodeRunnerFile.js"
-///[ 'a', 'hfghgfkjkhfk', 'c' ]
-//[ 'a', 'b', 'c' ]
+console.log(internet);
+
+
+// [Running] node "w:\КУРС ДЖАВА СКРИПТ\1\19 PEREDACHA_DANNIX_PO_SSILKE_ILI_ZNACHENIJU\tempCodeRunnerFile.js"
+// [
+//   'youtube',
+//   'vimeo',
+//   'rutube',
+//   'wordpress',
+//   'livejournal',
+//   'blogger',
+//   'vk',
+//   'facebook'
+// ]

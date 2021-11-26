@@ -1,14 +1,17 @@
 "use strict";
 
-let a = 5;
-b = a;
+const obj = {
+a:5,
+b:1
+};
 
-b = b + 5;
+const copy = obj;
 
+copy.a = 10;
 
-console.log(a);
-console.log(b);
+console.log(copy);
+console.log(obj);
 
-// Running] node "w:\КУРС ДЖАВА СКРИПТ\1\19 PEREDACHA_DANNIX_PO_SSILKE_ILI_ZNACHENIJU\tempCodeRunnerFile.js"
-// 5
-// 10
+// [Running] node "w:\КУРС ДЖАВА СКРИПТ\1\19 PEREDACHA_DANNIX_PO_SSILKE_ILI_ZNACHENIJU\tempCodeRunnerFile.js"
+// { a: 10, b: 1 }
+// { a: 10, b: 1 }

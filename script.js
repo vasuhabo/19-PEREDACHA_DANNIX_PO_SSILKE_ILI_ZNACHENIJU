@@ -1,23 +1,17 @@
 "use strict";
 
-const video = ['youtube','vimeo','rutube'];
+function log(a,b,c) {
+console.log(a);
+console.log(b);
+console.log(c);
 
-const blogs = ['wordpress','livejournal','blogger'];
+}
 
-const internet = [...video, ...blogs, 'vk', 'facebook'];
+const num = [2,5,7];
 
-
-console.log(internet);
-
+log(...num);
 
 // [Running] node "w:\КУРС ДЖАВА СКРИПТ\1\19 PEREDACHA_DANNIX_PO_SSILKE_ILI_ZNACHENIJU\tempCodeRunnerFile.js"
-// [
-//   'youtube',
-//   'vimeo',
-//   'rutube',
-//   'wordpress',
-//   'livejournal',
-//   'blogger',
-//   'vk',
-//   'facebook'
-// ]
+// 2
+// 5
+// 7
